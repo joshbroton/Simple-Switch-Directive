@@ -1,0 +1,28 @@
+.simple-switch {
+    display: inline-block;
+    height: 1.5em;
+    width: 2.5em;
+    background: green;
+    border-radius: 1em;
+    box-shadow: inset 0 0 .25em rgba(0,0,0,.2);
+    cursor: pointer;
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+.simple-switch--toggle  {
+    transition: all .3s ease;
+    display: block;
+    height: (22em/16);
+    width: (22em/16);
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(1px, 1px);
+    box-shadow: (1em/16) (2em/16) .25rem rgba(0,0,0,.3);
+    .active & {
+        transform: translate(1.0625em, 1px);
+        box-shadow: (-1em/16) (2em/16) .125rem rgba(0,0,0,.3);
+    }
+}
+

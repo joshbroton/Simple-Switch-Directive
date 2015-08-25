@@ -1,0 +1,25 @@
+.simple-switch {
+  display: inline-block;
+  height: 1.5em;
+  width: 2.5em;
+  background: green;
+  border-radius: 1em;
+  box-shadow: inset 0 0 0.25em rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+  .simple-switch input[type="checkbox"] {
+    display: none; }
+
+.simple-switch--toggle {
+  transition: all .3s ease;
+  display: block;
+  height: 1.375em;
+  width: 1.375em;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(1px, 1px);
+  box-shadow: 0.0625em 0.125em 0.25rem rgba(0, 0, 0, 0.3); }
+  .active .simple-switch--toggle {
+    transform: translate(1.0625em, 1px);
+    box-shadow: -0.0625em 0.125em 0.125rem rgba(0, 0, 0, 0.3); }
+
+/*# sourceMappingURL=simple-switch.css.map */
